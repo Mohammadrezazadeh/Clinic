@@ -1,0 +1,124 @@
+@import url('reset-min.css');
+@import url('fonts-min.css');
+
+body{
+    direction:rtl;
+    
+}
+#header{
+    background:url("../sliderengine/url.jpg") repeat-x ;
+}
+#wrap{
+    width:1024px;
+    height:46px;
+    position:relative;
+    z-index:99;
+    margin: 20px auto;
+}
+.nav{
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    border:1px #FF6600 solid;
+    height:50px;
+}
+.nav li{
+    float:right;
+    width:145px;
+    list-style:none;
+    border-bottom:1px #fff solid;
+    background-color:#282828;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+.nav a{
+    text-decoration:none;
+    display:block;
+    padding:18px 0px;
+    border-left:1px #fff solid;
+    font-family: tahoma;
+    color: #fff;
+    font-size: 16px;
+}
+.nav li ul{
+    display:none;
+    height:auto;
+    margin:0px;
+    padding:0px;
+}
+.nav li ul li{
+    width: 145px;
+}
+.nav li:hover ul{
+    display:block;
+}
+.nav li ul a:hover{
+    background-color:#82b3cd;
+}
+#slider{
+    margin-top: 25px;
+}
+#container{
+    margin: 0px auto;
+    width: 1024px;
+    position: relative;
+}
+#container .news{
+    float: left;
+    /* position: absolute;
+     left: 165px;*/
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow:3px 3px #aaa;
+    width: 720px;
+    min-height: 307px;
+    margin-bottom: 15px;
+}
+#container .news h3{
+    border-bottom:1px solid #aaa;
+    line-height: 26px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #C1DBFA;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+#container .news img{
+    float: right;
+    padding: 10px;
+}
+#container .news p{
+    font-family:Tahoma;
+    float: right;
+    margin-right: 15px;
+    padding: 3px;
+    line-height: 29px;
+
+}
+.clear{
+    clear: both;
+}
+#container .linked{
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    float: right;
+    width: 225px;
+    
+
+}
+#container .linked h3{
+    border-bottom: 1px solid #aaa;
+    padding: 8px;
+    text-align: center;
+    background-color: #C1DBFA;
+}
+#container .linked img{
+    width: 175px;
+    height: 75px;
+    padding:20px 22px 10px 10px;
+  
+}
+
+

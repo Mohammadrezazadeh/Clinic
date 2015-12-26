@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body style="direction: rtl">
+        <div class="container">
+            <h3>تکمیل فرم نوبت دهی</h3>
+            <div>نام پزشک&nbsp;&nbsp;&nbsp;&nbsp;<span>{{docInfo.name}}</span></div>
+            <div>نام درمانگاه&nbsp;&nbsp;&nbsp;&nbsp;<span>{{docInfo.clinic}}</span></div>
+            <div>روز&nbsp;&nbsp;&nbsp;&nbsp;<span>{{docInfo.day}}</span></div>
+            <div>تاریخ &nbsp;&nbsp;&nbsp;&nbsp;<span>{{docInfo.date|date('y:m:d')}}</span></div>
+            <div> زمان شروع&nbsp;&nbsp;&nbsp;&nbsp;<span> {{docInfo.strat|date('H:i:s')}}</span></div>
+            <div> زمان پایان&nbsp;&nbsp;&nbsp;&nbsp;<span> {{docInfo.end|date('H:i:s')}}</span></div><br/>
+            <div class="col-md-4" style="float: right">
+                
+                     {{form_start(myform)}}
+                     {{form_row(myform.name)}}
+                     {{form_row(myform.lastname)}}
+                     {{form_row(myform.fathername)}}
+                     {{form_row(myform.nastionalCode)}}
+                     {{form_row(myform.gender)}}
+                     {{form_row(myform.mobile)}}
+                     {{form_row(myform.email)}}
+                     {{form_row(myform.telphone)}}
+                     <input type="submit" value="ثبت">
+                     {{form_end(myform)}}
+               
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

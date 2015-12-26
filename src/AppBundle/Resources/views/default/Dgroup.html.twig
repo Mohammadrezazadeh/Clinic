@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+        
+    </head>
+
+    <body>
+        {{form_start(myform)}}
+
+        {{form_row(myform.name)}}
+        <input type="submit" value="ارسال">
+        {{form_end(myform)}}
+    </body>
+
+</html>

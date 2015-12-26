@@ -1,0 +1,47 @@
+@import url('reset-min.css');
+@import url('fonts-min.css');
+
+body{
+    direction:rtl;
+    
+}
+#container{
+    
+    
+    min-height: 1000px;
+    position: relative;
+}
+#container .content h1{
+    background-color: #EBF6FC;
+    font-size: 19px;
+    line-height: 25px;
+    color: #405664;
+    padding: 8px;
+    border-bottom: 1px solid #405664;
+}
+#container .content h2{
+    background-color: #fff;
+    color: #C00000;
+    font-size: 24px;
+    padding: 5px 15px;
+    display:block;
+}
+#container .content p{
+    margin: 5px 0px;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+#container .content p span{
+    color: red;
+}
+#container .content a{
+    margin: 56px;
+    background-color: #cc0033;
+    line-height: 22px;
+    padding: 10px 15px;
+    font-size: 22px;
+    position: absolute;
+    right: 335px;
+    color: #fff;
+    border-radius: 7px;
+}

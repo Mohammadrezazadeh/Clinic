@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+         <script src="{{asset('sliderengine/bootstrap.min.js')}}"></script>
+        <!-- Insert to your webpage before the </head> -->
+        <script src="{{asset('sliderengine/jquery.js')}}"></script>
+        <script src="{{asset('sliderengine/amazingslider.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{asset('sliderengine/amazingslider-1.css')}}">
+        <script src="{{asset('sliderengine/initslider-1.js')}}"></script>
+        <!-- End of head section HTML codes -->
+        <title>Home</title>
+    </head>
+    <body>
+       {{form_start(myform)}}
+        {{form_row(myform.title)}}
+        {{form_row(myform.content)}}
+        {{form_row(myform.file)}}
+        <input type="submit" value="Sned"/>
+        {{form_end(myform)}}
+       asdfghj
+        
+    </body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <!-- Insert to your webpage before the </head> -->
+        <script src="{{asset('sliderengine/jquery.js')}}"></script>
+        <script src="{{asset('sliderengine/amazingslider.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{asset('sliderengine/amazingslider-1.css')}}">
+        <script src="{{asset('sliderengine/initslider-1.js')}}"></script>
+        <!-- End of head section HTML codes -->
+        <title>Home</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="wrap">
+                <ul class="nav">
+                    <li><a href="{{path('homepage')}}">خانه</a></li>
+                    <li><a href="#">درباره مرکز</a>
+                        <ul>
+                            <li><a href="#">تیم مدیریت مرکز</a></li>
+                            <li><a href="#">تاریخچه</a></li>
+                            <li><a href="#">بیانیه ها</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">خدمات</a>
+                        <ul>
+                            <li><a href="{{ path('app_visit') }}">دریافت نوبت درمانگاه</a></li>
+                            <li><a href="#">مدارک لازم جهت بستری </a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">بخشها</a>
+                        <ul>
+                            <li><a href="#">بخش های بستری</a></li>
+                            <li><a href="#">درمانگاه های بستری</a></li>
+                            <li><a href="#">پارکینگ ها</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">سایر واحدها</a>
+                        <ul>
+                            <li><a href="#">دفتر تحقیق و توسعه</a></li>
+                            <li><a href="#">معاونت اموزشی</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">مطالب اموزشی</a>
+                        <ul>
+                            <li><a href="#">اموزش های بهداشتی  </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">تماس با ما</a>
+                        <ul>
+                            <li><a href="#">انتقادات و پیشنهادات</a></li>
+                            <li><a href="#"> روابط عمومی</a></li>
+                            <li><a href="#"> پست الکترونیک</a></li>
+                            <li><a href="#">درج خبر</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+            <!--#header-->
+            <div id="slider">
+                <!-- Insert to your webpage where you want to display the slider -->
+                <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1024px;margin:0px auto 60px;">
+                    <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                        <ul class="amazingslider-slides" style="display:none;">
+                            <li><img src="{{asset('images/_MG_4704.jpg')}}" alt="www.m30net.com" />
+                            </li>
+                            <li><img src="{{asset('images/_MG_4707.jpg')}}" alt="www.m30net.com" />
+                            </li>
+                            <li><img src="{{asset('images/IMG_5157.jpg')}}" alt="www.m30net.com" />
+                            </li>
+                        </ul>
+                        <ul class="amazingslider-thumbnails" style="display:none;">
+                            <li><img src="{{asset('images/_MG_4704-tn.jpg')}}" alt="www.m30net.com" /></li>
+                            <li><img src="{{asset('images/_MG_4707-tn.jpg')}}" alt="www.m30net.com" /></li>
+                            <li><img src="{{asset('images/IMG_5157-tn.jpg')}}" alt="www.m30net.com" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of body section HTML codes -->
+            </div>
+            <!--#silder-->
+        </div>
+        <!--#header-->
+        <div id="container">
+            <div class="news">
+                <h3>جدید ترین اخبار مرکز</h3>
+                <img src="{{asset('images/IMG_5157.jpg')}}" alt="www.m30net.com" width="85" height="55"/>
+                <p>1394/10/8</p>
+                <p>بارالها در ایام محرم "با حسین" بودن را به من بیاموز،همانگونه که "یا حسین" گفتن را آموختی .</p>
+                <div class="clear"></div>
+            </div>
+            <div class="linked">
+                <h3>لینک های مرتبط</h3>
+                <a href="{{ path('app_visit') }}"><img src="{{asset('sliderengine/adsClinic.png')}}"</a><br/>
+                 <a href=""><img src="{{asset('sliderengine/adsParaAns.png')}}"</a>
+            </div>
+        </div>
+        <!--#Container-->
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <form role="form">
+                <div class="form-group">
+                    
+                    {{form_start(myform)}}
+                    
+                    {#{{form_row(myform.lastname)}}
+                    {{form_row(myform.fatherName)}}
+                    {{form_row(myform.nationalCode)}}
+                    {{form_row(myform.gender)}}
+                    {{form_row(myform.birthday)}}
+                    {{form_row(myform.email)}}
+                    {{form_row(myform.insurance)}}
+                    {{form_row(myform.telphone)}}
+                    {{form_row(myform.mobile)}}#}
+                    <input type="submit" value="send"/>
+                    {{form_end(myform)}}
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

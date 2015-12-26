@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+        <style>
+            #app_record_pay_0{
+                position: absolute;
+                right: -19px;
+            }
+            #app_record_pay_1{
+                position: absolute;
+                right: -19px;
+            }
+        </style>
+    </head>
+
+    <body style="direction: rtl">
+
+        <div class="container">
+            <h2>تکمیل نوبت دهی</h2>
+
+            <table style="direction: rtl" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>نام پدر </th>
+                        <th>کد ملی</th>
+                        <th> جنسیت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>{{cure.name}}</th>
+                        <th>{{cure.lastname}}</th>
+                        <th>{{cure.fathername}}</th>
+                        <th>{{cure.nastionalCode}}</th>
+                        <th>{{cure.gender}}</th>
+                    </tr>
+                   
+                </tbody>
+            </table>
+
+           {# <div>نام بیمار&nbsp;&nbsp;&nbsp;&nbsp;<span>{{cure.name}}&nbsp;{{cure.lastname}}</span></div>
+            <div>نام پدر&nbsp;&nbsp;&nbsp;&nbsp;<span>{{cure.fathername}}</span></div>
+            <div> کد ملی&nbsp;&nbsp;&nbsp;&nbsp;<span>{{cure.nastionalCode}}</span></div>
+            <div>جنسیت&nbsp;&nbsp;&nbsp;&nbsp;<span>{{cure.gender}}</span></div>#}
+            <div class="well">
+            {{form_start(form)}}
+            {{form_row(form.pay)}}
+            <input type="submit" value="send"/>
+            {{form_end(form)}}
+        </div>
+            <br/>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+        <div class="container" style="direction: rtl" >
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>تاریخ</th>
+                        <th>روز</th>
+                        <th>پزشک</th>
+                        <th>کلینیک</th>
+                        <th>شروع</th>
+                        <th>پایان</th>
+                        <th>مبلغ ویزیت</th>
+                        <th>قیمت بیمه</th>
+                        <th> نوبت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        {% for p in pro %}
+                        <tr>
+                            <td>{{p.date|date('y-m-d')}}</td>
+                            <td>{{p.day}}</td>
+                            <td>{{p.name}}</td>
+                            <td>{{p.clinic}}</td>
+                            <td>{{p.strat|date('H:i:s')}}</td>
+                            <td>{{p.end|date('H:i:s')}}</td>
+                            <td>{{p.payVisite}}</td>
+                            <td>{{p.payIns}}</td>
+                            <td><a href="{{path('app_complate_queue',{'id':p.id})}}">دریافت نوبت</a></td>
+                        </tr>
+                        {%endfor%}
+                  
+                    
+                </tbody>
+            </table>
+         
+         <div>
+    </body>
+
+</html>

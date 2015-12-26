@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body style="direction: rtl">
+        <div class="container">
+            <div class="jumbotron">
+                <p>نام و نام خانوادگی :&nbsp;&nbsp;{{cure.name}}&nbsp;{{cure.lastname}}</p>
+                <p>نام و تخصص دکتر   :&nbsp;&nbsp;{{cure.doctor.name}}</p>
+                <p> تاریخ     :&nbsp;&nbsp;{{cure.doctor.date|date('y:m:d')}}</p>
+                <p> از ساعت     :&nbsp;&nbsp;{{cure.doctor.strat|date('H:i:s')}}&nbsp;الی&nbsp;{{cure.doctor.end|date('H:i:s')}}</p>
+                <p> محل درمانگاه     :&nbsp;&nbsp;{{cure.doctor.clinic}}</p>
+                <p><a href="{{path('homepage')}}">برگشت به صفحه اول</a></p>
+            </div>
+        </div>
+    </body>
+
+</html>
